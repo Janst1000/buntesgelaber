@@ -1,7 +1,6 @@
 from transformers import pipeline
 from transformers import RobertaTokenizerFast
 import argparse
-from pprint import pprint
 
 tokenizer = RobertaTokenizerFast.from_pretrained("./tokenizer", max_len=512)
 
