@@ -1,3 +1,7 @@
+# ignoring model and tokenizer
+buntesgelaber/
+tokenizer/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
