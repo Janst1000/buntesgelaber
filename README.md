@@ -4,30 +4,7 @@ This is a natural language processing model trained on german laws taken from th
 
 ## Setup
 
-In order to set everything up correctly, you should download the model files from https://huggingface.co/Janst1000/buntesgelaber/tree/main
-
-Make sure to place config.json, pytorch_model.bin and training_args.bin in a subfolder of this directory called buntesgelaber
-
-Place merges.txt and vocab.json in a subfolder called tokenizer
-
-Your file structure should look like this
-
-```
-│   .gitignore
-│   fill.py
-│   README.md
-│
-├───buntesgelaber
-│       config.json
-│       pytorch_model.bin
-│       training_args.bin
-│
-└───tokenizer
-        merges.txt
-        vocab.json
-```
-
-Once this is done you will be able to run the fill.py script
+The model will automatically downloaded from huggingface when you first run the script.
 
 It is also recommended to install a conda evironment with all the necessary python modules
 

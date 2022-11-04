@@ -1,8 +1,10 @@
+from transformers import AutoTokenizer, AutoModelForMaskedLM
 from transformers import pipeline
-from transformers import RobertaTokenizerFast
-import argparse
 
-tokenizer = RobertaTokenizerFast.from_pretrained("./tokenizer", max_len=512)
+tokenizer = AutoTokenizer.from_pretrained("Janst1000/buntesgelaber")
+
+model = AutoModelForMaskedLM.from_pretrained("Janst1000/buntesgelaber")
+import argparse
 
 parser = argparse.ArgumentParser()
 
@@ -21,7 +23,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     fill_mask = pipeline(
         "fill-mask",
-        model="./buntesgelaber",
+        model= model,
         tokenizer=tokenizer
     )
     # checking if input has <mask> token
