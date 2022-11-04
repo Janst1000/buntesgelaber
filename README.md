@@ -1,10 +1,12 @@
 # buntesgelaber
 
-This is a natural language processing model trained on german laws taken from the bundestag/gesetze repository.
+This is a natural language processing model trained on german laws taken from the https://github.com/bundestag/gesetze
 
 ## Setup
 
 The model will automatically downloaded from huggingface when you first run the script.
+
+You can also find the model here https://huggingface.co/Janst1000/buntesgelaber/tree/main
 
 It is also recommended to install a conda evironment with all the necessary python modules
 
